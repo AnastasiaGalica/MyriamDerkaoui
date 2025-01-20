@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Myriam DK - Painter Artist</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="styles/styles-600.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/styles-768.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="styles/styles-992.css">
+    <link rel="stylesheet" media="screen and (min-width: 1200px)" href="styles/styles-1200.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"/>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- SLIDESHOW -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+
+<body>
+
+    <!--=============== HEADER ===============-->
+    <header class="header header-scroll" id="header">
+        <div class="logo"> <!-- Visible only on devices (<992px)-->
+            <h1 class="montserrat">Myriam DK</h1>
+            <h2 class="aref-ruqaa">مريام درقاوي</h2>
+        </div>
+        <i class="fa-solid fa-bars bars-icon" id="bars-icon" onclick="openMenu()"></i>
+
+        <!-- Visible on > 992px devices and on other devices when it's on toggle-->
+        <nav class="navbar" id="navbar"> 
+            <div class="navbar-shadow"></div>
+            <div class="logo">
+                <h1 class="montserrat">Myriam DK</h1>
+                <h2 class="aref-ruqaa">مريام درقاوي</h2>
+            </div>
+
+            <i class="fa-solid fa-xmark close-icon" id="close-icon" onclick="openMenu()"></i>
+
+            <ul id="navbar-list" class="roboto abs-centered">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#paintings">Paintings</a></li>
+                <li><a href="#portraits">Portraits</a></li>
+                <li><a href="#footer" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main>
+        <!--=============== PRINCIPAL ===============-->
+        <section class="principal roboto">
+            <img src="img/pic_rouge.jpg" class="mobile-device" id="fixedImage">
+            <img src="img/pic_bird.JPG" class="computer-device" id="fixedImage">
+            <div class="principal-text">
+                <h1>Myriam Derkaoui</h1>
+                <h2>Painter Artist</h2>
+            </div>
+        </section>
+
+
+        <!--=============== ABOUT ME ===============-->
+        <section class="about-me roboto" id="about">
+            <h1 class="roboto">Visual Artist - Specialist <br> in Fine Arts</h1>
+            <p class="roboto">I am a self-taught visual artist passionate about exploring diverse artistic 
+                techniques and materials. My work is driven by curiosity and a desire to develop my unique 
+                style, blending experimentation with careful exploration of each medium.</p>
+            <img src="img/butterfly.png">
+        </section>
+
+
+        <!--=============== PAINTINGS ===============-->
+        <section class="painting" id="paintings">
+            <img class="watercolor" src="img/pink-watercolor.png">
+            <h1 class="montserrat">Artworks</h1>
+
+            <div class="images">
+                <img src="img/pic_eye.JPG">
+                <img src="img/pic_starry.jpg">
+                <img src="img/pic_rouge.JPG">
+                <img src="img/pic_ballet.JPG">
+            </div>
+        </section>
+
+
+        <!--=============== PORTRAITS ===============-->
+        <section class="portraits" id="portraits">
+            <img class="watercolor" src="img/pink-splash.png">
+            <h1 class="montserrat">Portraits</h1>
+
+            <div class="images">
+                <img src="img/pic_portrait1.jpg">
+                <img src="img/pic-portrait2.jpg">
+                <img src="img/pic_portrait3.jpg">
+                <img src="img/pic_portrait4.jpg">
+            </div>
+            
+            <img src="img/beige-splash.png">
+        </section>
+
+        
+        <!--=============== COMMAND ===============-->
+        <section class="command">
+
+        </section>
+    </main>
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer roboto centered-items" id="footer">
+        <h1>Contact</h1>
+
+        <div class="footer-content">
+            <div class="footer-contact">
+                <ul class="centered-items">
+                    <li><i class="fa-solid fa-envelope"></i> monemail@gmail.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +213558756598</li>
+                </ul>
+            </div>
+    
+            <div class="footer-menu">
+                <ul class="centered-items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#paintings">Paintings</a></li>
+                    <li><a href="#portraits">Portraits</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>@2025 Myriam Derkaoui</h2>
+    </footer>
+
+
+    
+
+</body>
+</html>
